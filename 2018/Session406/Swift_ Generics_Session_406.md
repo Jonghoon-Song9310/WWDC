@@ -208,7 +208,7 @@ func map<T>(_ transform: (Element) -> T) -> [T] {
 
 아래 코드는 최적화된 코드입니다.
 
-![image1.png](images/image1.png)
+![image1.png](Images/image1.png)
 
 Dictionary에 경우에는 count property의 기본 구현이 아닌 사용자 지정 구현을 사용하면 더 좋은 속도를 보입니다.
 
@@ -309,7 +309,7 @@ random access 측면이 있는 RandomAccessCollection protocol과 mutation의 �
 
 이 때 RandomAccessCollection protocol을 따르는 object는 MutableCollection protocol 또한 준수하는 경우를 제약으로 하여 extension을 작성할 수 있습니다. **이렇게 하면 두가지 능력을 한군데 모을 수 있습니다.** 적합한 유형이 많고 일반적인 알고리즘이 많은 경우 프로토콜 계층 구조를 형성하는 경향이 있습니다. 이 계층은 너무 크거나 세분화되어서는 안됩니다.
 
-![image2.png](images/image2.png)
+![image2.png](Images/image2.png)
 계층을 올라가면서, 요구 사항이 더 적은 프로토콜로 이동하므로 이러한 요구 사항을 구현할 수 있는 Type이 더 많아 집니다. 
 계층을 내려가면서, 계층 구조와 다른 프로토콜들을 조합함에 따라, 더 많고 복잡하고 전문화된 알고리즘을 구현할 수 있습니다.
 
@@ -321,7 +321,7 @@ random access 측면이 있는 RandomAccessCollection protocol과 mutation의 �
 
 아래 이미지를 먼저 보겠습니다.
 
-![image2.png](images/image3.png)
+![image3.png](Images/image3.png)
 
 Slice는 모든 Collection에 대해 특정 범위의 인덱스를 구독하여 해당 집합의 조각을 만들 수 있습니다. 그리고, 그 조각은 본질적으로 Collection의 일부를 보여 주는 것입니다. 
 
@@ -389,7 +389,7 @@ for i in intRange { ... }
 
 실제로 그 내용은 아래 그림에 나타납니다. 
 
-![image2.png](images/image4.png)
+![image4.png](Images/image4.png)
 
 Swift4.2이전 버전에서는 integer range는 실제로 다른 유형을 얻게 됩니다. countableRange Type입니다. 
 
